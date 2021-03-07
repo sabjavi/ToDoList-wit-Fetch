@@ -1,5 +1,34 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
+$theme-colors: (  
+  "success":    $success,
+  "warning":    $warning,
+  "danger":     $danger
+);
+
+li:hover > i,
+li > i:hover {
+    visibility: visible;
+}
+li:hover{
+    background-color: lighten(gray, 30%);
+}
+li > i{
+    visibility: hidden;
+}
+
+.btn{
+    background-color: $warning;
+}
+
+.btn:hover{
+    background-color: $danger;
+}
+
+.btn:focus {
+  background-color: $success;
+}
+
 /* 
 
     You can write your own styles here...
